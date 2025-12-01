@@ -1,0 +1,180 @@
+/* Global Styles - Sahara Moroccan Pixel Art Theme */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+  /* Palette Sahara Marocaine */
+  --sand-light: #F5E6D3;
+  --sand-mid: #E8D4B8;
+  --sand-dark: #C9A876;
+  --desert-gold: #D4AF37;
+  --turquoise: #20B2AA;
+  --sky-blue: #87CEEB;
+  --ocean-blue: #1E90FF;
+  --red-bordeaux: #8B0000;
+  --olive-green: #6B8E23;
+  --terracotta: #CD5C5C;
+  --dark-brown: #3E2723;
+  --cream: #FFF8DC;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  
+  /* Border Radius (Pixel Art - usually 0 or 2px) */
+  --radius-pixel: 0px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  
+  /* Font */
+  font-family: 'Arial', 'Helvetica', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background: linear-gradient(135deg, #F5E6D3 0%, #E8D4B8 50%, #C9A876 100%);
+  background-attachment: fixed;
+  color: var(--dark-brown);
+  font-family: 'Arial', system-ui, -apple-system, 'Noto Naskh Arabic', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Pixel Art Border Effect */
+.pixel-font {
+  font-family: 'Courier Prime', monospace;
+  font-weight: 700;
+}
+
+/* Pixel Art Borders */
+.pixel-border {
+  border: 3px solid var(--dark-brown);
+  box-shadow: 
+    inset 1px 1px 0px rgba(255, 255, 255, 0.5),
+    inset -1px -1px 0px rgba(0, 0, 0, 0.5),
+    3px 3px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--cream);
+}
+
+.pixel-border-accent {
+  border: 4px solid var(--desert-gold);
+  box-shadow: 
+    inset 1px 1px 0px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 0px rgba(0, 0, 0, 0.5),
+    4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Pixel Art Button */
+.btn-pixel {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border: 3px solid var(--dark-brown);
+  background: var(--cream);
+  color: var(--dark-brown);
+  font-weight: 700;
+  font-family: 'Courier Prime', monospace;
+  cursor: pointer;
+  box-shadow: 
+    inset 1px 1px 0px rgba(255, 255, 255, 0.5),
+    inset -1px -1px 0px rgba(0, 0, 0, 0.5),
+    4px 4px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-pixel:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 
+    inset 1px 1px 0px rgba(255, 255, 255, 0.5),
+    inset -1px -1px 0px rgba(0, 0, 0, 0.5),
+    6px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn-pixel:active {
+  transform: translate(0, 0);
+  box-shadow: 
+    inset 1px 1px 0px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 0px rgba(255, 255, 255, 0.3),
+    1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary-pixel {
+  background: linear-gradient(180deg, var(--turquoise) 0%, var(--ocean-blue) 100%);
+  color: var(--cream);
+  border-color: var(--dark-brown);
+}
+
+.btn-secondary-pixel {
+  background: var(--sand-light);
+  color: var(--dark-brown);
+}
+
+.btn-danger-pixel {
+  background: linear-gradient(180deg, var(--red-bordeaux) 0%, #650000 100%);
+  color: var(--cream);
+  border-color: var(--dark-brown);
+}
+
+.btn-success-pixel {
+  background: linear-gradient(180deg, var(--olive-green) 0%, #556B2F 100%);
+  color: var(--cream);
+  border-color: var(--dark-brown);
+}
+
+/* Scrollbar Pixel Style */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sand-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--desert-gold);
+  border: 2px solid var(--dark-brown);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sand-dark);
+}
+
+/* Animations */
+@keyframes pixelBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pixelPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes pixelSlideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pixelFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-bounce { animation: pixelBounce 0.6s infinite; }
+.animate-pulse { animation: pixelPulse 1s infinite; }
+.animate-slide-in { animation: pixelSlideIn 0.4s ease; }
+.animate-fade-in { animation: pixelFadeIn 0.6s ease; }

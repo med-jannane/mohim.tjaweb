@@ -1,0 +1,22 @@
+.nav-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-btn {
+  background: var(--cream);
+  border: 3px solid var(--dark-brown);
+  color: var(--dark-brown);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 3px 3px 0 var(--desert-gold);
+  font-family: 'Courier Prime', monospace;
+}
+
+.nav-btn:hover { transform: translateY(-2px); }
+
+.nav-back { background: linear-gradient(135deg, #fff8e1, #f0e2a8); }
+.nav-exit { background: linear-gradient(135deg, #ffdddd, #f7b1b1); }
