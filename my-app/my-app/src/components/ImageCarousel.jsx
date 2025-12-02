@@ -15,7 +15,6 @@ function ImageCarousel() {
     '/img/Cigogne (1).jpeg',
     '/img/Cigogne.jpeg',
     '/img/Flag Spécial.jpeg',
-    '/img/Has been selected to Stay in morocco 🇲🇦_#electronicdiversityvisaprogram #usa #morocco.jpeg',
     '/img/L\'mâallem Van Gogh 😎😍.jpeg',
     '/img/Moroccan Art_Instagram_ @blizzart_ 🇲🇦.jpeg',
     '/img/Tableaux décoratifs au Maroc - Art Mural en Toile,Plexiglass by KOLORS.jpeg',
