@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 // Pour GitHub Pages, remplacez 'mouhim-tjawb' par le nom de VOTRE dépôt GitHub
-const REPO_NAME = 'mouhim-tjawb' // ⚠️ CHANGEZ CE NOM !
+const REPO_NAME = 'mohim.tjawb'
 
 export default defineConfig({
   plugins: [
