@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Home.css'
-import ImageCarousel from './ImageCarousel'
+
 
 function Home({ navigateTo, setGameMode }) {
   const [showSlangs, setShowSlangs] = useState(false)
@@ -41,7 +41,7 @@ function Home({ navigateTo, setGameMode }) {
       </div>
 
       {/* Image Carousel */}
-      <ImageCarousel />
+     
 
       {/* Welcome Message */}
       <div className="welcome-box">
